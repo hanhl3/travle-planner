@@ -17,7 +17,7 @@ SplashScreen.preventAutoHideAsync()
 export default function RootLayout() {
     return (
         <Stack>
-            <Stack.Screen name="HomePage" options={{ headerShown: false }} />
+            <Stack.Screen name="index" options={{ headerShown: false }} />
         </Stack>
     )
 }
