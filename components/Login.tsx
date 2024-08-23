@@ -1,7 +1,15 @@
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
+import { useRouter } from 'expo-router'
 
 const Login = () => {
+
+    const router = useRouter()
+
+    const starte = () => {
+        router.push('/(auth)/login')
+    }
+    
     return (
         <View style={styles.container}>
             <Image
@@ -18,7 +26,7 @@ const Login = () => {
                     </Text>
                 </View>
 
-                <TouchableOpacity style={styles.button}>
+                <TouchableOpacity style={styles.button} onPress={starte}>
                     <Text style={styles.buttonText}>Get Started</Text>
                 </TouchableOpacity>
             </View>
